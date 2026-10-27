@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grand Core2Dine Hotel - Booking</title>
+  </head>
+
+  <body>
+    <header>
+      <h2>Grand Core2Dine Hotel - Booking</h2>
+
+      <p>Complete the form below to reserve your room.</p>
+
+      <nav>
+        <p><i>"Your Comfort is Our Priority"</i></p>
+        <a href="Home.html">Home</a>| <a href="Room.html">Rooms</a>|
+        <a href="RoomCparison.html">Rooms Comparison</a>|
+        <a href="Booking.html">Booking</a>|
+        <a href="Restaurant.html">Restaurant</a>|
+        <a href="Gallery.html">Gallery</a>|
+        <a href="Facilities.html">Facilities</a>|
+        <a href="Media.html">Media</a>|
+        <a href="Contact&FAQ.html">Contact&FAQ</a>
+        <hr />
+      </nav>
+    </header>
+
+    <hr />
+
+    <main>
+      <h3>Hotel Booking Form</h3>
+
+      <p>
+        Please provide the required information to complete your hotel
+        reservation.
+      </p>
+
+      <fieldset>
+        <legend>Guest Information</legend>
+
+        <label for="fullname">Full Name:</label><br />
+        <input
+          type="text"
+          id="fullname"
+          name="fullname"
+          placeholder="Enter your full name"
+          required
+        />
+        <br /><br />
+
+        <label for="email">Email Address:</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="example@gmail.com"
+          required
+        />
+        <br /><br />
+
+        <label for="phone">Phone Number:</label><br />
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="Enter 10-digit phone number"
+          pattern="[0-9]{10}"
+          required
+        />
+        <br /><br />
+      </fieldset>
+
+      <br />
+
+      <fieldset>
+        <legend>Stay Details</legend>
+
+        <label for="checkin">Check-in Date:</label><br />
+        <input type="date" id="checkin" name="checkin" required />
+        <br /><br />
+
+        <label for="checkout">Check-out Date:</label><br />
+        <input type="date" id="checkout" name="checkout" required />
+        <br /><br />
+
+        <label for="guests">Number of Guests:</label><br />
+        <input
+          type="number"
+          id="guests"
+          name="guests"
+          min="1"
+          max="20"
+          value="1"
+          required
+        />
+        <br /><br />
+
+        <label for="roomtype">Room Type:</label><br />
+        <select>
+          <option value="">-- Select Room Type --</option>
+        </select>
+        <br /><br />
+
+        <label for="rooms">Number of Rooms:</label><br />
+        <input
+          type="number"
+          id="rooms"
+          name="rooms"
+          min="1"
+          max="10"
+          value="1"
+          required
+        />
+        <br /><br />
+      </fieldset>
+
+      <br />
+
+      <fieldset>
+        <legend>Meal Preferences</legend>
+
+        <p>Select your meal preference:</p>
+
+        <input type="radio" id="vegetarian" name="meal" value="Vegetarian" />
+        <label for="vegetarian">Vegetarian</label>
+        <br />
+
+        <input
+          type="radio"
+          id="nonvegetarian"
+          name="meal"
+          value="Non-Vegetarian"
+        />
+        <label for="nonvegetarian">Non-Vegetarian</label>
+        <br />
+
+        <input type="radio" id="vegan" name="meal" value="Vegan" />
+        <label for="vegan">Vegan</label>
+        <br />
+      </fieldset>
+
+      <br />
+
+      <fieldset>
+        <legend>Airport Pickup</legend>
+
+        <p>Do you require airport pickup?</p>
+
+        <input type="radio" id="pickupyes" name="pickup" value="Yes" />
+        <label for="pickupyes">Yes</label>
+
+        <input type="radio" id="pickupno" name="pickup" value="No" />
+        <label for="pickupno">No</label>
+        <br />
+      </fieldset>
+
+      <br />
+
+      <fieldset>
+        <legend>Additional Information</legend>
+
+        <label for="requests">Special Requests:</label><br />
+
+        <textarea
+          id="requests"
+          name="requests"
+          rows="5"
+          cols="40"
+          placeholder="Enter any special requests..."
+        ></textarea>
+        <br /><br />
+
+        <label for="idproof">ID Proof Upload:</label><br />
+        <input type="file" id="idproof" name="idproof" accept="image/*,.pdf" />
+        <br /><br />
+
+        <input
+          type="checkbox"
+          id="terms"
+          name="terms"
+          value="Agreed"
+          required
+        />
+        <label for="terms"> I agree to the hotel terms and conditions. </label>
+        <br />
+      </fieldset>
+
+      <br />
+
+      <fieldset>
+        <legend>Submit Booking</legend>
+
+        <input type="submit" value="Submit Booking" />
+        <input type="reset" value="Reset Form" />
+      </fieldset>
+    </main>
+
+    <hr />
+
+    <footer>
+      <p>&copy; 2026 Grand Core2Dine Hotel. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
